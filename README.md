@@ -1,3 +1,5 @@
-"# my-portfolio-for-Klab"
+# my-portfolio-for-Klab
 
-It is my own portfolio I design for kLab study
+Here is the portfolio for KLab.
+
+Currently I am designing a homepage. 
