@@ -7,4 +7,4 @@ Currently I am designing a homepage.
 
 <br>
 
-You can visit it at <a href="https://patienceigiraneza.vercel.app/">patienceigiraneza.vercel.app</a>
+You can visit this portofolio at <a href="https://patienceigiraneza.vercel.app/">patienceigiraneza.vercel.app</a>

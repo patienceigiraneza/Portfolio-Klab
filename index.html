@@ -18,7 +18,7 @@
                     <span class="logo"><img src="images/logo.png" /></span>
                 </div>
                 <div>
-                    <ul class="navlinks">
+                    <ul class="navlinks topnav" id="myTopnav">
                         <li><a href="home.html"> Home</a></li>
                         <li><a href="portofolio.html"> Portofolio </a> </li>
                         <li><a href="about.html"> About </a> </li>
@@ -27,7 +27,8 @@
                     </ul>
                 </div>
                 <div class="buttonContainer">
-                    <button class="navButton"><i class="fa-solid fa-bars"></i></button>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()"><button class="navButton"><i
+                                class="fa-solid fa-bars"></i></button></a>
                 </div>
             </nav>
         </header>
@@ -75,7 +76,7 @@
     </div>
 
     <div class="text-div">
-        <div class="title-2">JULIE CARLSON GRAPHIC & WEB DESIGNER </div>
+        <div class="title-2">PATIENCE IGIRANEZA GRAPHIC & WEB DESIGNER </div>
         <div>
             “Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas”
         </div>
@@ -90,7 +91,7 @@
     <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
         <!-- Left -->
         <div class="me-5 d-none d-lg-block">
-            <span>Get connected with us on social networks:</span>
+            <span>Get connected with me on social networks:</span>
         </div>
         <!-- Left -->
 
@@ -128,10 +129,10 @@
                 <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
                     <!-- Content -->
                     <h6 class="text-uppercase fw-bold mb-4">
-                        <i class="fas fa-gem me-3 text-secondary"></i>Company name
+                        <i class="fas fa-gem me-3 text-secondary"></i>ABOUT ME
                     </h6>
                     <p style="color: black;">
-                        Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        I am a Python and Ruby Software Engineer. I am enthusiastic in software development, especially in web and mobile application development.
                     </p>
                 </div>
                 <!-- Grid column -->
@@ -143,7 +144,7 @@
                         Products
                     </h6>
                     <p style="color: black;">
-                        Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        I am enthusiastic in software development, especially in web and mobile application development.
                     </p>
                 </div>
                 <!-- Grid column -->
@@ -154,9 +155,22 @@
                     <h6 class="text-uppercase fw-bold mb-4">
                         Useful links
                     </h6>
-                    <p style="color: black;">
-                        Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    <p style="color:rgb(9, 2, 116);">
+                        <a href="#!" class="text-reset">Home</a>
                     </p>
+                    <p style="color:rgb(9, 2, 116);">
+                        <a href="#!" class="text-reset">Portofolio</a>
+                    </p>
+                    <p style="color:rgb(9, 2, 116);">
+                        <a href="#!" class="text-reset">About</a>
+                    </p>
+                    <p style="color:rgb(9, 2, 116);">
+                        <a href="#!" class="text-reset">Blog</a>
+                    </p>
+                    <p style="color:rgb(9, 2, 116);">
+                        <a href="#!" class="text-reset">Contact</a>
+                    </p>
+
                     </p>
                 </div>
                 <!-- Grid column -->
@@ -165,12 +179,11 @@
                 <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
                     <!-- Links -->
                     <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-                    <p><i class="fas fa-home me-3 text-secondary"></i> New York, NY 10012, US</p>
-                    <p>
+                    <p style="color:black;"><i class="fas fa-home me-3 text-secondary"></i> Kigali - Kicukiro</p>
+                    <p style="color:black;">
                         <i class="fas fa-envelope me-3 text-secondary"></i> patienceigiraneza2@gmail.com
                     </p>
-                    <p><i class="fas fa-phone me-3 text-secondary"></i> + 01 234 567 88</p>
-                    <p><i class="fas fa-print me-3 text-secondary"></i> + 01 234 567 89</p>
+                    <p style="color:black;"><i class="fas fa-phone me-3 text-secondary"></i> + 250 787 895 414</p>
                 </div>
                 <!-- Grid column -->
             </div>
@@ -187,5 +200,15 @@
     <!-- Copyright -->
 </footer>
 <!-- Footer -->
+<script>
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+</script>
 
 </html>
