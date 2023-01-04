@@ -2,7 +2,7 @@
 
 Here is the portfolio for KLab.
 
-Currently I am designing a homepage.
+Currently I am in progress.
 
 
 <br>
