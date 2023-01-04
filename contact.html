@@ -33,16 +33,6 @@
                 </div>
             </nav>
         </header>
-        <main>
-
-            <div class="coding-image">
-                <h2 class="introText">Patience
-                    <br> Igiraneza
-                </h2>
-
-            </div>
-
-        </main>
     </div>
     <!-- <div class="text-div ">
         <span class="left-span left-span-1">
@@ -61,69 +51,43 @@
 
 
     <div class="text-div">
-        <div class="title-2">PATIENCE IGIRANEZA GRAPHIC & WEB DESIGNER </div><br>
+        <span style="font-size:17px; color:gray; ">GET A QUOTE </span>
+        <div class="title-2">CONTACT ME </div><br>
         <div>
-            “Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas”
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi.
 
         </div>
     </div>
-    </div>
-    <!-- another div  -->
-    <hr>
-    <div class="wrapper-of-content">
-        <div class="content-1">
-            <strong> SKILLS </strong><br><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </div>
-        <div class="content-2">
 
-            <div style="border-bottom: solid gray 2px;width: 90%;">Python & Django<span style="float: right;"> 95%</span><br></div>
-            <div style="border-bottom: solid gray 2px;width: 85%;"><br>HTML <span style="float: right;"> 90%</span><br></div>
-            <div style="border-bottom: solid gray 2px;width: 85%;"><br>CSS <span style="float: right;"> 90%</span><br></div>
-            <div style="border-bottom: solid gray 2px;width: 78%;"><br>PHP  <span style="float: right;"> 85%</span><br></div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3987.4386845742456!2d30.103375914308884!3d-1.9789640373310322!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19dca636b63adb43%3A0x47837d70b1566fdc!2sRwanda%20Polytechnic!5e0!3m2!1sen!2srw!4v1672870964896!5m2!1sen!2srw" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
+    <div class="text-div" style="margin-top: 50px;">
+        <div class="title-2"> Grand Portfolio Blogger </div><br>
+        <div style="color: gray;">
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi.
 
         </div>
-
-
     </div>
 
+    <div class="form">
+
+        <h3> FORM VALIDATION </h3> <br>
+        <input id="inputname" type="text" class="form-control" name="inputname" placeholder="Input your full name" /> <br><br>
+        <input id="inputemail" type="text" class="form-control" name="inputemail" placeholder="Input your email address" /><br>
 
 
-    <!-- another div  -->
+        <textarea id="inputmessage" class="form-control" name="inputmessage" rows="6"
+         placeholder="Input your message" ></textarea>
+            <br>
+        <div style="color: green;" id="response"></div>
 
+        <br><br>
 
-</body><br><br><br><br><br><br><br><br>
-
-<hr>
-<div class="wrapper-of-content">
-
-    <div class="content-3">
-        <strong> EDUCATION </strong><br><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </div>
-
-        <div class="content-3">
-            <strong> AWARDS  </strong><br><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br><br>
-            <strong> EXPERIENCE </strong><br><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </div>
-
-            <div class="content-3">
-                <strong> WEB APPLICATION  </strong><br><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br><br>
-                <strong> DESKTOP APLLICATION </strong><br><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </div>
-</div>
-
-<br><br><br><br><br><br><br><br><br><br><br><br>
-<hr><br><br>
-<div class="image-bg">
-    <div class="inside-div">
-        <div class="core-div">
-        OUR PHILOSOPHY <br><br>
-        <strong> The details are not the details. They make the design.  </strong><br><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        <div id="response"></div>
+        <button type="button" class="btn btn-info" onclick="validateMyForm()" style="float: right;">Send</button><br><br>
     </div>
-        </div>
-    </div><br>
 
-</div>
+
 <hr>
 <!-- Footer -->
 <footer class="text-center text-lg-start bg-white text-muted" style="color: black;">
@@ -252,3 +216,38 @@
 </script>
 
 </html>
+
+<script>
+    function ValidateEmail(mail) {
+        if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(mail)) {
+            return (true)
+        } else {
+            return (false)
+        }
+    }
+
+    function validateMyForm() {
+        event.preventDefault();
+        let name = document.getElementById("inputname").value;
+        let email = document.getElementById("inputemail").value;
+        let message = document.getElementById("inputmessage").value;
+        let text;
+        if (name == "") {
+            alert("The name is required!");
+            event.preventDefault();
+        } else if (email == "") {
+            alert("Email is required!")
+            event.preventDefault();
+        }else if (message == "") {
+            alert("Message is required!")
+            event.preventDefault();
+        } else if (ValidateEmail(email) == false) {
+            event.preventDefault();
+            alert("You have entered an invalid email address!")
+        } else {
+            document.getElementById("response").innerHTML = " Email sent! ";
+        }
+
+
+    }
+</script>
