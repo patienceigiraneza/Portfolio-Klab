@@ -1,29 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
+<script src="https://smtpjs.com/v3/smtp.js">
+</script>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Patience Igiraneza</title>
-    <link rel="stylesheet" href="css/main.css">
-</head>
+<button onclick="sendEmail()"> Send</button>
 
-<body>
-    <div class="first-frame">
-        <navbar class="nav">
-            <ul>
-                <li><a href="home.html"> Home</a></li>
-                <li><a href="portofolio.html"> Portofolio </a> </li>
-                <li><a href="about.html"> About </a> </li>
-                <li><a href="blog.html"> Blog </a> </li>
-                <li><a href="contact.html"> Contact </a> </li>
-
-            </ul>
-
-            <!-- <img src="images/img1.JPG"  class="bg-image" /> -->
-        </navbar>
-    </div>
-</body>
-
-</html>
+<script>
+    function sendEmail(){
+Email.send({
+    Host : "smtp.elasticemail.com",
+    Username : "patienceigiraneza2@gmail.com",
+    Password : "D8BE942FD3DF25DD23406C525AFD4363ECA5",
+    To : 'patienceigiraneza2@gmail.com',
+    From : 'patienceigiraneza2@gmail.com',
+    Subject : "This is the subject",
+    Body : "And this is the body"
+}).then(
+  message => alert(message)
+);
+}
+</script>
