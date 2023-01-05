@@ -16,13 +16,13 @@
         <header class="header">
             <nav class="navbar">
                 <div class="logoContainer">
-                    <span class="logo"><img src="images/logo.png" /></span>
+                    <span class="logo"><img src="images/logob.png" class="logo" /></span>
                 </div>
                 <div>
-                    <ul class="navlinks topnav" id="myTopnav">
+                    <ul class="navlinks topnav hide" id="myTopnav">
                         <li><a href="index.html"> Home</a></li>
-                        <li><a href="portofolio.html"> Portofolio </a> </li>
                         <li><a href="about.html"> About </a> </li>
+                        <li><a href="portofolio.html"> Portofolio </a> </li>
                         <li><a href="blog.html"> Blog </a> </li>
                         <li><a href="contact.html"> Contact </a> </li>
                     </ul>
@@ -35,7 +35,7 @@
         </header>
 
     </div>
-    <div class="text-div">
+    <div class="text-div"><br>
         <span class="left-span left-span-1">
             <span class="text-title">Latest Works </span> <br> Lorem ipsum dosectetur adipisicing elit, sed do. Lorem ipsum dolor sit amet, <br> consectetur Nulla fringilla purus at leo dignissim congue.
         </span>
@@ -195,12 +195,13 @@
 </footer>
 <!-- Footer -->
 <script>
-    function myFunction() {
+     function myFunction() {
         var x = document.getElementById("myTopnav");
-        if (x.className === "topnav") {
-            x.className += " responsive";
+        if (x.className === "navlinks topnav hide") {
+            x.className = "topnav responsive";
+            // x.className += " hide";
         } else {
-            x.className = "topnav";
+            x.className = "navlinks topnav hide";
         }
     }
 </script>

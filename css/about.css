@@ -236,7 +236,25 @@ main {
     min-height: 300px;
 }
 
+.hide{
+    display: flex;
+}
+li{
+
+    text-decoration: none;
+}
+
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 1300px) {
+    .hide{
+        display: none;
+    }
+    .topnav{
+        position: fixed;
+        height: 310px;
+    }
+}
+
 
 @media screen and (max-width: 600px) {
     .topnav a:not(:first-child) {
@@ -279,5 +297,39 @@ main {
     }
     .core-div{
         padding: 20px;
+    }
+    /* for responsiveness on mobile */
+    .hide{
+        display: none;
+    }
+    .topnav{
+        position: fixed;
+        height: 310px;
+    }
+    ul{
+        list-style-type: none;
+    }
+    .coding-image {
+    margin-top: -25px;
+    height: 320px;
+    }
+
+    .logo{
+    font-size: 15px;
+    max-width: 25px;
+    height: auto;
+
+    }
+    .introText{
+        margin-top: 180px;
+    }
+    .content-3 {
+        width: 96%;
+        padding: 2%;
+        float: left;
+    }
+
+    .image-bg{
+        height: 400px;
     }
 }

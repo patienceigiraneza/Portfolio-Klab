@@ -287,4 +287,25 @@ main {
     .core-div{
         padding: 20px;
     }
+    /* for responsiveness on mobile */
+    .hide{
+        display: none;
+    }
+    .topnav{
+        position: fixed;
+        height: 310px;
+    }
+    ul{
+        list-style-type: none;
+    }
+    .coding-image {
+    margin-top: -25px;
+    }
+
+    .logo{
+    font-size: 15px;
+    max-width: 25px;
+    height: auto;
+
+    }
 }

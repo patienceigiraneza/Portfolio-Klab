@@ -17,13 +17,13 @@
         <header class="header">
             <nav class="navbar">
                 <div class="logoContainer">
-                    <span class="logo"><img src="images/logo.png" /></span>
+                    <span class="logo"><img src="images/logob.png" class="logo"/></span>
                 </div>
                 <div>
-                    <ul class="navlinks topnav" id="myTopnav">
+                    <ul class="navlinks topnav hide" id="myTopnav">
                         <li><a href="index.html"> Home</a></li>
-                        <li><a href="portofolio.html"> Portofolio </a> </li>
                         <li><a href="about.html"> About </a> </li>
+                        <li><a href="portofolio.html"> Portofolio </a> </li>
                         <li><a href="blog.html"> Blog </a> </li>
                         <li><a href="contact.html"> Contact </a> </li>
                     </ul>
@@ -207,12 +207,13 @@
 </footer>
 <!-- Footer -->
 <script>
-    function myFunction() {
+        function myFunction() {
         var x = document.getElementById("myTopnav");
-        if (x.className === "topnav") {
-            x.className += " responsive";
+        if (x.className === "navlinks topnav hide") {
+            x.className = "topnav responsive";
+            // x.className += " hide";
         } else {
-            x.className = "topnav";
+            x.className = "navlinks topnav hide";
         }
     }
 </script>
@@ -231,7 +232,9 @@ Email.send({
     Subject : "PORTOFOLIO WEBSITE EMAIL",
     Body : messagebody
 }).then(
-  message => alert(message)
+//   message => alert(message)
+    message => document.getElementById("response").innerHTML = " Send email status: " + message +"!"
+
 );
 }
 </script>
@@ -266,8 +269,8 @@ Email.send({
             alert("You have entered an invalid email address!")
         } else {
             let messagebody = "Sender name: "+ name + " email: " + email + " message: " + message;
+            document.getElementById("response").innerHTML = " Sending email...... ";
             sendEmail(messagebody);
-            document.getElementById("response").innerHTML = " Data validation success! ";
         }
 
 
