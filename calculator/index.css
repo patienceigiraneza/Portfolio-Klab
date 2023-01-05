@@ -5,10 +5,11 @@ body {
   }
 
   .squareButton {
-    width: 40px;
+    width: 84px;
+    height: 50px;
     padding: 10px 15px;
     background: #fff;
-    font-size: 15px;
+    font-size: 17px;
     font-weight: bold;
     border-radius: 10px;
     margin: 5px;
@@ -16,8 +17,8 @@ body {
   }
 
   .clearButton {
-    background: red;
-    width: 200px;
+    background: rgb(101, 74, 255);
+    width: 380px;
     margin: 5px;
     padding: 10px 0;
     font-size: 15px;
@@ -29,18 +30,19 @@ body {
 
   .displayBox {
     margin: 5px;
-    width: 200px;
-    height: 50px;
+    width: 380px;
+    height: 90px;
     border-radius: 10px;
-    font-size: 20px;
+    font-size: 24px;
     text-align: right;
     font-weight: bold;
     padding: 0 5px 0 0;
   }
 
   .container {
-    background: #000;
+    background: rgb(59, 59, 59);
     padding: 5px;
-    width: 220px;
+    width: 400px;
+    height: 400px;
     border-radius: 10px;
   }
