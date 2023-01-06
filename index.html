@@ -13,7 +13,7 @@
 
 <body>
     <div class="first-frame">
-        <header class="header">
+        <header class="header" id="myheader">
             <nav class="navbar">
                 <div class="logoContainer">
                     <span class="logo"><img src="images/logo.png" class="logo"/></span>
@@ -63,6 +63,7 @@
         <a href="todo/index.html"><img src="images/todo.jpg" class="sample-images"></a>
         <a href="http://3.65.90.219/"><img src="images/recruitemnt.jpg" class="sample-images"></a>
         <img src="images/1.JPG" class="sample-images">
+
 
         <img src="images/defense.jpg" class="sample-images">
         <img src="images/defense.jpg" class="sample-images">
@@ -208,11 +209,15 @@
 <script>
     function myFunction() {
         var x = document.getElementById("myTopnav");
+        var y = document.getElementById("myheader");
         if (x.className === "navlinks topnav hide") {
             x.className = "topnav responsive";
+            y.className ='header black';
             // x.className += " hide";
         } else {
             x.className = "navlinks topnav hide";
+            y.className ='header';
+
         }
     }
 </script>

@@ -86,7 +86,7 @@
 
         <div id="response"></div>
         <button type="button" class="btn"  onclick="validateMyForm()"
-        style="float: right;background-color: rgb(34, 34, 34); font-weight: bold; color: white;">SEND EMAIL</button><br><br>
+        style="float: right;background-color: rgb(34, 34, 34); font-weight: bold; color: white;">SEND MESSAGE</button><br><br>
     </div>
 
 
@@ -233,7 +233,7 @@ Email.send({
     Body : messagebody
 }).then(
 //   message => alert(message)
-    message => document.getElementById("response").innerHTML = " Send email status: " + message +"!"
+    message => document.getElementById("response").innerHTML = " Send message status: " + message +"!"
 
 );
 }
@@ -269,7 +269,7 @@ Email.send({
             alert("You have entered an invalid email address!")
         } else {
             let messagebody = "Sender name: "+ name + " email: " + email + " message: " + message;
-            document.getElementById("response").innerHTML = " Sending email...... ";
+            document.getElementById("response").innerHTML = " Sending message....... ";
             sendEmail(messagebody);
         }
 
